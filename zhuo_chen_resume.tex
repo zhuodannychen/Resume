@@ -40,16 +40,17 @@
 \newcommand{\bDiamond}{\mathbin{\blacklozenge}}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\newcommand{\sep}{\textcolor{titlecolor}{$\bigcdot$ }}
+\newcommand{\sep}{\textcolor{black}{$\bigcdot$ }}
+% or change color to titlecolor ^
 
-\definecolor{titlecolor}{RGB}{1,1,1}
+\definecolor{titlecolor}{RGB}{57,148,190}
 % \name{Zhuo Chen} % Your name
 % \address{156 Kasturi, Balajinagar, Sangli 416416} % Your address
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
 
 \begin{document}
 \begin{center}
-    \Large \textbf{\textcolor{titlecolor}{ZHUO CHEN}}\\
+    \huge \textbf{\textcolor{titlecolor}{ZHUO CHEN}}\\
     \onehalfspacing
     \small \faEnvelope \space zhuodannychen@gmail.com \hspace{0.1cm}
     \faPhone \space 469-782-6312 \hspace{0.1cm}
@@ -70,9 +71,10 @@
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Education}
 
-{\bf Texas A\&M University} \hfill {\bf 2020 - 2024}\\
+{\bf Texas A\&M University} \hfill {\bf 2020 - 2023}\\
 \textit{B.S. in Computer Science} \hfill GPA: 4.0/4.0\\
-\hspace*{0.78em} \sep Courses: Discrete Math, Linear Algebra, Multivariable Calculus
+    \hspace*{0.78em} \sep Courses: Discrete Math, Linear Algebra, Multivariable Calculus,
+    Intro to Program Design \& Concepts, Principles of Statistics
 
 % GPA and courses
 
@@ -87,18 +89,26 @@
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Leadership \& Involvement}
-\begin{rSubsection}{Aggie Coding Club}{College Station, TX}{Project Manager, Full-Stack Developer}{Sept. 2020 - Present}
+\begin{rSection}{Experience}
+    \begin{rSubsection}{12th Unmanned Autodrive Team}{College Station, TX}{Undergraduate Researcher | Lab directed by Dezhen Song and Jian Tao, Dept CS\&E, TAMU}{Jan. 2021 - Present}
+    \item Building a level-4 autonomous vehicle to compete in the SAE Autodrive Challenge
+    \item Developing virtualized environments to reduce the time and cost of building AVs through simulated training % and validation
+\end{rSubsection}
+
+\begin{rSubsection}{Aggie Coding Club}{College Station, TX}{Project Manager, Full-Stack Developer}{Sept. 2020 - Dec. 2020}
+    % \item Created a web app to notify students when filled courses are available in order to save time during class registration
+    % \item Built a web app to notify students when filled courses are available to save time and maximize the chance to get a class 
     \item Created a web application that notifies students when filled courses are available during class registration, saving time and maximizing the chance for students to get a filled course
     \item Delegated project tasks and roles to 17 members based on individual strength and interest
     \item Tracked project performance to analyze the completion of short and long-term plans
-    \item Developed using \textbf{MongoDB}, \textbf{Express}, \textbf{ReactJS}, \textbf{NodeJS}, and \textbf{Python}
+    \item Developed the project using \textbf{MongoDB}, \textbf{ExpressJS}, \textbf{ReactJS}, \textbf{NodeJS}, and \textbf{Python}
 \end{rSubsection}
 
 \begin{rSubsection}{Computer Science Club}{Plano, TX}{Senior Executive Officer}{Aug. 2019 - June 2020}
     \item Led teams to win at multiple programming competitions including Lockheed Martin CodeQuest
-    \item Planned and judged a regional programming contest with 150+ participants to encourage involvement in computer science
+    \item Coordinated a regional programming contest with 150+ participants to encourage involvement in computer science
     \item Lectured on advanced algorithms and data-structures to upperclassmen that appear frequently in contests
+    \item Interviewed and recruited candidates through behavioral and algorithmic questions to find new officers
 \end{rSubsection}
 \end{rSection}
 
@@ -108,27 +118,25 @@
 %-----------------------------------------------------------------------------------------------
 
 \begin{rSection}{Projects}
+
 \begin{rSubsection}{StockBot}{Sept. 2020}{}{}
-    \item Developed a Discord bot to facilitate the discussion of trading and investing for college students on Discord
-    \item Forecasted stock prices using a \textbf{LSTM} model trained with data from Alpha Vantage API
+    \item Developed a Discord bot using \textbf{Python} to facilitate the discussion of trading and investing for college students on Discord
+    \item Forecasted stock prices using a \textbf{Tensorflow LSTM} model trained with data from Alpha Vantage API
     \item Returned real-time stock information by scrapping data from Yahoo Finance with \textbf{BeautifulSoup}
-    \item Developed using \textbf{Python} and \textbf{Tensorflow}
+    \item Won best overall, most creative, and most useful for Capsher Coding Challenge 2020
 \end{rSubsection}
 
 \begin{rSubsection}{CLearn}{July 2020}{}{}
-    \item Compiled data from the 5000 most frequent Chinese characters data-set to help users learn and test their Chinese character recognition level
-    \item Developed using \textbf{MongoDB}, \textbf{Express}, \textbf{ReactJS}, and \textbf{NodeJS}
-\end{rSubsection}
-
-\begin{rSubsection}{Algorithms Library}{April 2020}{}{}
-    \item Created a library of 17 popular algorithms and data structures that appear frequently in programming contests
-    \item Implemented all algorithms using \textbf{C++}
+    \item Compiled data from the 5000 most frequent Chinese characters dataset to help users learn new Chinese characters
+    \item Predicted hand-drawn chinese character digits using a \textbf{Convolutional Neural Network} with 98\% accuracy
+    \item Created an algorithm to estimate the number of Chinese characters a user knows with a 3 minute test
+    \item Developed using \textbf{MongoDB}, \textbf{ExpressJS}, \textbf{ReactJS}, \textbf{NodeJS}, and \textbf{Tensorflow}
 \end{rSubsection}
 
 \begin{rSubsection}{Wolf Programming Invitational Contest}{Feb. 2020}{}{}
     \item Coordinated and planned an annual programming contest with 150+ high school participants to encourage involvement in computer science
-    \item Designed, wrote, and solved problems in the packet
-    \item Assisted with event management and judging
+    \item Designed, wrote, and solved problems in the packet to maintain consistency
+    \item Assisted with event management and judging to ensure a smooth operation of the event
     \item Formatted packet in \textbf{LaTeX}, wrote solutions in \textbf{Java} and \textbf{Python}
 \end{rSubsection}
 \end{rSection}
@@ -139,11 +147,12 @@
 
 \begin{rSection}{Achievements}
 \begin{rSubsection}{}{}{}{}
+    \item 1st Place Capsher Coding Challenge 2020
     \item 1st Place Frozen Eagle Invitational Contest 2020
+    \item 2nd Place Pariveda Solutions Coding Challenge 2020
     \item 2nd Place Lockheed Martin CodeQuest 2020
     \item 2nd Place UTD Invitational Contest 2020
-    \item 2nd Place Frisco FirstBytes 2019
-    \item AP Scholar with Distinction
+    \item 8th Place TAMU Fall Programming Contest 2020
 \end{rSubsection}
 \end{rSection}
 
@@ -151,12 +160,14 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Skills \& Interests}
-{\bf Technical Skills}:
-Proficient in Python; Familiar with Java, C++, ReactJS, NodeJS, Git, LaTeX \\
+{\bf Languages}:
+Proficient in Python, C++; Familiar with Java, Javascript, HTML/CSS, LaTeX, Bash \\
+{\bf Technologies}:
+Tensorflow, PyTorch, MongoDB, ExpressJS, ReactJS, NodeJS, Git, Heroku, Vim\\
 {\bf Soft Skills}:
-Bilingual Communicator (English, Chinese), Initiator, Resourceful\\
+Bilingual Communication (English, Chinese), Initiative, Goal Setting\\
 {\bf Interests}:
-Artificial Intelligence, Competitive Programming, Investing
+Machine Learning, Competitive Programming, Trading
 \end{rSection}
 
 
