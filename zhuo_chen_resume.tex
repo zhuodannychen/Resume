@@ -21,7 +21,7 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
-\usepackage[left=0.5in,top=0in,right=0.5in,bottom=0.5in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
 
 \usepackage{enumitem}
 \usepackage{fontawesome}
@@ -30,6 +30,7 @@
 \usepackage{setspace}
 % \renewcommand{\familydefault}{\sfdefault}
 \usepackage[default,scale=0.95]{opensans}
+% \usepackage{uarial}
 \usepackage[T1]{fontenc}
 % \usepackage[none]{hyphenat}
 
@@ -43,16 +44,18 @@
 \newcommand{\sep}{\textcolor{black}{$\bigcdot$ }}
 % or change color to titlecolor ^
 
-\definecolor{titlecolor}{RGB}{57,148,190}
-% \name{Zhuo Chen} % Your name
+% \definecolor{titlecolor}{RGB}{57,148,190}
+% \definecolor{titlecolor}{RGB}{67, 135, 151}
+\definecolor{titlecolor}{RGB}{14, 82, 156}
+\name{Zhuo \Large(Danny) \huge Chen} % Your name
 % \address{156 Kasturi, Balajinagar, Sangli 416416} % Your address
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
 
 \begin{document}
 \begin{center}
-    \huge \textbf{\textcolor{titlecolor}{ZHUO CHEN}}\\
-    \onehalfspacing
-    \small \faEnvelope \space zhuodannychen@gmail.com \hspace{0.1cm}
+    % \huge \textbf{\textcolor{titlecolor}{ZHUO \Large(Danny) \huge CHEN}}\\
+    % \onehalfspacing
+    \normalsize \faEnvelope \space zhuodannychen@gmail.com \hspace{0.1cm}
     \faPhone \space 469-782-6312 \hspace{0.1cm}
     \faGithub \space \href{https://github.com/zhuodannychen}{zhuodannychen} \hspace{0.1cm}
     \faLinkedinSquare \space \href{https://www.linkedin.com/in/zhuodannychen/}{zhuodannychen} \hspace{0.1cm}
@@ -71,10 +74,10 @@
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Education}
 
-{\bf Texas A\&M University} \hfill {\bf 2020 - 2023}\\
-\textit{B.S. in Computer Science} \hfill GPA: 4.0/4.0\\
+{\bf Texas A\&M University} \hfill {\it 2020 - 2023}\\
+\textit{B.S. in Computer Science; Dean's Honor Roll} \hfill GPA: 4.0/4.0\\
     \hspace*{0.78em} \sep Courses: Discrete Math, Linear Algebra, Multivariable Calculus,
-    Intro to Program Design \& Concepts, Principles of Statistics
+    Program Design \& Concepts, Statistics
 
 % GPA and courses
 
@@ -90,25 +93,28 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
-    \begin{rSubsection}{12th Unmanned Autodrive Team}{College Station, TX}{Undergraduate Researcher | Lab directed by Dezhen Song and Jian Tao, Dept CS\&E, TAMU}{Jan. 2021 - Present}
-    \item Building a level-4 autonomous vehicle to compete in the SAE Autodrive Challenge
-    \item Developing virtualized environments to reduce the time and cost of building AVs through simulated training % and validation
+\begin{rSubsection}{DJI RoboMaster}{College Station, TX}{Software Engineer on Computer Vision Team}{Feb. 2021 - Present}
+    \item Trained a deep learning model (\textbf{YoloV4}) with 65\% mAP to detect red and blue armor plates on moving robots
+    \item Created a 1100 image dataset through data labeling and augmentation to analyze different model performances % more impactful
 \end{rSubsection}
 
-\begin{rSubsection}{Aggie Coding Club}{College Station, TX}{Project Manager, Full-Stack Developer}{Sept. 2020 - Dec. 2020}
+\begin{rSubsection}{TAMU Autodrive}{College Station, TX}{Undergraduate Researcher | Lab directed by Jian Tao, Dept CS\&E, TAMU}{Jan. 2021 - May. 2021}
+    \item Successfully navigated a self driving car around a racetrack in \textbf{CARLA} simulator using Stanley and PID control algorithms 
+    \item Developed a semantic segmentation UNet model to identify road/lane segments in CARLA images
+\end{rSubsection}
+
+\begin{rSubsection}{Aggie Coding Club}{College Station, TX}{Project Manager, Full-Stack Developer | Aggie Registration Alert}{Sept. 2020 - Dec. 2020}
     % \item Created a web app to notify students when filled courses are available in order to save time during class registration
     % \item Built a web app to notify students when filled courses are available to save time and maximize the chance to get a class 
-    \item Created a web application that notifies students when filled courses are available during class registration, saving time and maximizing the chance for students to get a filled course
-    \item Delegated project tasks and roles to 17 members based on individual strength and interest
-    \item Tracked project performance to analyze the completion of short and long-term plans
-    \item Developed the project using \textbf{MongoDB}, \textbf{ExpressJS}, \textbf{ReactJS}, \textbf{NodeJS}, and \textbf{Python}
+    \item Collaborated on a \textbf{MERN} stack application to notify students when filled courses are available during class registration
+    \item Determined the project scope and delegated tasks to 17 members; integrated scraped data with frontend
+    \item Simplified class search process by \textbf{100\%} and maximized the probability to get a filled course
 \end{rSubsection}
 
 \begin{rSubsection}{Computer Science Club}{Plano, TX}{Senior Executive Officer}{Aug. 2019 - June 2020}
     \item Led teams to win at multiple programming competitions including Lockheed Martin CodeQuest
-    \item Coordinated a regional programming contest with 150+ participants to encourage involvement in computer science
-    \item Lectured on advanced algorithms and data-structures to upperclassmen that appear frequently in contests
-    \item Interviewed and recruited candidates through behavioral and algorithmic questions to find new officers
+    \item Served as a team mentor for 40+ high schoolers, lectured on algorithms and data structures from contests weekly
+    \item Interviewed 20+ potential candidates through behavioral and algorithmic questions
 \end{rSubsection}
 \end{rSection}
 
@@ -119,25 +125,21 @@
 
 \begin{rSection}{Projects}
 
-\begin{rSubsection}{StockBot}{Sept. 2020}{}{}
-    \item Developed a Discord bot using \textbf{Python} to facilitate the discussion of trading and investing for college students on Discord
-    \item Forecasted stock prices using a \textbf{Tensorflow LSTM} model trained with data from Alpha Vantage API
-    \item Returned real-time stock information by scrapping data from Yahoo Finance with \textbf{BeautifulSoup}
-    \item Won best overall, most creative, and most useful for Capsher Coding Challenge 2020
+\begin{rSubsection}{StockBot}{\normalfont \textit{Sept. 2020}}{}{}
+    \item Developed a Discord bot with \textbf{Python} to facilitate the discussion of trading and investing for college students
+    \item Scraped real-time stock data from Yahoo Finance with BeautifulSoup to be used with bot commands
+    \item Awarded best overall, most creative, and most useful bot based on project idea for Capsher Coding Challenge 2020
 \end{rSubsection}
 
-\begin{rSubsection}{CLearn}{July 2020}{}{}
-    \item Compiled data from the 5000 most frequent Chinese characters dataset to help users learn new Chinese characters
-    \item Predicted hand-drawn chinese character digits using a \textbf{Convolutional Neural Network} with 98\% accuracy
-    \item Created an algorithm to estimate the number of Chinese characters a user knows with a 3 minute test
-    \item Developed using \textbf{MongoDB}, \textbf{ExpressJS}, \textbf{ReactJS}, \textbf{NodeJS}, and \textbf{Tensorflow}
+\begin{rSubsection}{CLearn}{\normalfont \textit{July 2020}}{}{}
+    \item Revamped a \textbf{MERN} stack web application to help users learn and memorize 5000 Chinese characters for the HSK test
+    \item Built a \textbf{CNN} classifier with \textbf{Tensorflow} to predict hand-drawn chinese character digits with 98\% accuracy
+    \item Created efficient UI/UX by reducing mouse clicks by 50\%; Proposed an algorithm to estimate the number of Chinese characters a user knows in 3 minutes
 \end{rSubsection}
 
-\begin{rSubsection}{Wolf Programming Invitational Contest}{Feb. 2020}{}{}
-    \item Coordinated and planned an annual programming contest with 150+ high school participants to encourage involvement in computer science
-    \item Designed, wrote, and solved problems in the packet to maintain consistency
-    \item Assisted with event management and judging to ensure a smooth operation of the event
-    \item Formatted packet in \textbf{LaTeX}, wrote solutions in \textbf{Java} and \textbf{Python}
+\begin{rSubsection}{Wolf Programming Invitational Contest}{\normalfont \textit{Feb. 2020}}{}{}
+    \item Coordinated an annual programming contest with \textbf{150+} high school participants to encourage involvement in CS 
+    \item Designed, wrote, formatted, and solved 20 problems with LaTeX, Java, and Python
 \end{rSubsection}
 \end{rSection}
 
@@ -145,13 +147,12 @@
 %	Awards SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Achievements}
+\begin{rSection}{Awards}
 \begin{rSubsection}{}{}{}{}
     \item 1st Place Capsher Coding Challenge 2020
     \item 1st Place Frozen Eagle Invitational Contest 2020
     \item 2nd Place Pariveda Solutions Coding Challenge 2020
     \item 2nd Place Lockheed Martin CodeQuest 2020
-    \item 2nd Place UTD Invitational Contest 2020
     \item 8th Place TAMU Fall Programming Contest 2020
 \end{rSubsection}
 \end{rSection}
@@ -163,11 +164,11 @@
 {\bf Languages}:
 Proficient in Python, C++; Familiar with Java, Javascript, HTML/CSS, LaTeX, Bash \\
 {\bf Technologies}:
-Tensorflow, PyTorch, MongoDB, ExpressJS, ReactJS, NodeJS, Git, Heroku, Vim\\
+Tensorflow, MongoDB, ReactJS, NodeJS, Git, Heroku, Vim\\
 {\bf Soft Skills}:
-Bilingual Communication (English, Chinese), Initiative, Goal Setting\\
+Bilingual Communication (English, Chinese), Time Management\\
 {\bf Interests}:
-Machine Learning, Competitive Programming, Trading
+Machine Learning, Software Development, Competitive Programming, Trading
 \end{rSection}
 
 
